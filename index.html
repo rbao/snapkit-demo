@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta content="og:site_name" property="og:site_name">
+  <meta content="og:title" property="og:title">
+</head>
+<body>
+  <div class="snapchat-creative-kit-share" data-share-url="https://localhost:8000/"></div>
+
+  <!-- Other Page HTML -->
+  <script>
+    // Load the SDK asynchronously
+    (function (d, s, id) {
+      var js, sjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://sdk.snapkit.com/js/v1/create.js";
+      sjs.parentNode.insertBefore(js, sjs);
+    }(document, 'script', 'snapkit-creative-kit-sdk'));
+  </script>
+</body>
+</html>
